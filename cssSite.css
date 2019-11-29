@@ -1,0 +1,19 @@
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color :white;
+}
+a
+{
+    color: white;
+    font-size: 16px;
+}
+
+footer
+{
+    border : 1px solid blue;
+    color : red;
+}
