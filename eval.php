@@ -44,7 +44,8 @@ if(!empty($_SESSION))
 
             <?php
         }
-        ?></div><?php
+        ?><a class="lienBouton" href="mailto:<?php echo $_POST['email'];?>">Envoyer un mail à <?php echo $_POST['prenom'] ;?></a>
+          </div><?php
     }
 }
 
