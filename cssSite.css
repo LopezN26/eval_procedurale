@@ -6,14 +6,31 @@ ul
     background-color: black;
     color :white;
 }
-a
+.liensListe
 {
     color: white;
     font-size: 16px;
 }
 
+.lienAncre
+{
+    padding: 10px;
+    color :red;
+}
 footer
 {
     border : 1px solid blue;
-    color : red;
+    color : green;
+    padding : 10px;
+}
+
+.contact
+{
+
+    border : 1px solid black;
+}
+
+#italic
+{
+    font-style: italic;
 }
