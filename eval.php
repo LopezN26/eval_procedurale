@@ -31,9 +31,12 @@ if (!empty($_POST))
 if(!empty($_SESSION))
 {
 
-    foreach($_SESSION['repertoire'] as $value)
+    foreach($_SESSION['repertoire'] as $key=>$value)
     {
-        ?><div class="contact"><?php
+        $mail=$_SESSION['repertoire'][$key]['Email'];
+        $prenom=$_SESSION['repertoire'][$key]['Prenom'];
+        ?>
+        <div class="contact"><?php
         foreach ($value as $key=>$info) //Oui je sais, c'est le mal, désolé.
         {
             ?>
@@ -44,7 +47,8 @@ if(!empty($_SESSION))
 
             <?php
         }
-        ?><a class="lienBouton" href="mailto:<?php echo $_POST['email'];?>">Envoyer un mail à <?php echo $_POST['prenom'] ;?></a>
+        ?>
+        <a class="lienBouton" href="mailto:<?php echo $mail;?>">Envoyer un mail à <?php echo $prenom ;?></a>
           </div><?php
     }
 }
