@@ -12,6 +12,10 @@ ul
     font-size: 16px;
 }
 
+p
+{
+    color:black;
+}
 .lienAncre
 {
     padding: 10px;
@@ -44,4 +48,13 @@ footer
 #italic
 {
     font-style: italic;
+}
+.rouge
+{
+    color :red;
+}
+
+#rouge:target
+{
+    display : none;
 }
